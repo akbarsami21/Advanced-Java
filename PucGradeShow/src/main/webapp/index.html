@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>puc cgpa</title>
+<h1 style="color: black; text-align: center;">Premier University, Chittagong</h1>
+
+<style>
+body {
+	background-color: #4db6ac;
+}
+
+form {
+	background-color: #1e88e5;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+input[type="submit"] {
+	background-color: #d81b60;
+	color: black;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+input[type="submit"]:hover {
+	background-color: #ede7f6;
+}
+
+input[type="submit"] {
+	/* other CSS rules */
+	display: block;
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+	<form action="server" method="post">
+		<label for="name">Enter Name:</label> <input type="text" id="name"
+			name="user_name"> <label for="cgpa">Enter CGPA:</label> <input
+			type="number" id="cgpa" name="user_cgpa" step="0.01" min="0" max="4">
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+

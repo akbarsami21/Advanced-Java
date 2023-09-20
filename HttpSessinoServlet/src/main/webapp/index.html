@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Example</title>
+<style>
+.form-container {
+	width: 300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: yellow;
+	border-radius: 5px;
+}
+
+.form-container label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-container input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.form-container input[type="submit"] {
+	width: 100%;
+	padding: 8px 12px;
+	font-size: 14px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+	background-color: #45a049;
+}
+</style>
+</head>
+<body>
+	<div class="form-container">
+		<form action="server1" method="post">
+			<label for="textfield">Enter Name:</label> <input type="text"
+				id="textfield" name="user_name" placeholder="Enter name here">
+			<br>
+			<br> <input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
