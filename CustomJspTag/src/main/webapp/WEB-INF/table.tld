@@ -1,0 +1,21 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+    <tlib-version>1.0</tlib-version> <!-- Add this line with the desired version -->
+
+    <tag>
+        <name>printTable</name>
+        <tag-class>com.tags.MyTagHandlerAttribute</tag-class>
+        <attribute>
+            <name>number</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>color</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
+
