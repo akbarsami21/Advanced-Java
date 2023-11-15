@@ -12,7 +12,7 @@ public class ConnectionProvider {
 			PreparedStatement pstmt = con.prepareStatement(q);
 			pstmt.setString(1, "Akbar Sami");
 			pstmt.setString(2, "mdsami6251@gmail.com");
-			pstmt.setString(3, "SAmi2253&");
+			pstmt.setString(3, "");
 			pstmt.executeUpdate();
 			System.out.println("Successfully Done");
 		} catch (Exception e) {
